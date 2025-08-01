@@ -3,11 +3,11 @@
 $url = 'https://sms.textsms.co.ke/api/services/sendsms/';
 
 $data = [
-    "apikey" => "512994c5dd1710497411494567e87194",
-    "partnerID" => "11179",
+    "apikey" => "YOUR API KEY",
+    "partnerID" => "YOUR PARTNERID",
     "message" => "Hello, this is a test message from Veen Africa.",
-    "shortcode" => "TextSMS",
-    "mobile" => "254741575274"
+    "shortcode" => "YOUR SENDERID",
+    "mobile" => "Phone Number (multiple numbers should be comma separated"
 ];
 
 $jsonData = json_encode($data);
@@ -28,6 +28,7 @@ if (curl_errno($ch)) {
 } else {
     echo 'Response: Success' . $response;
 }
+
 
 
 curl_close($ch);
